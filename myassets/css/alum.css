@@ -1,0 +1,380 @@
+/*************************************************
+*****************general css**********************
+*************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  margin: 0;
+  height: 100%;
+  min-width: 100%;
+  font-family: 'Roboto', sans-serif;
+  /*overflow-x: hidden;*/
+}
+
+#homepage{
+  position: relative;
+  width: 100%;
+  /*max-width: 100vw;*/
+  height: auto;
+  /*overflow-x: hidden;*/
+
+}
+
+#nonhomepage{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/*************************************************
+***************Top Landing Section css************
+*************************************************/
+#topsec{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  background-image: url("../media/firstlandingbanner1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #3C7A89;
+  color: #FFF;
+  overflow-x: hidden;
+}
+
+#topsec::after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 80%;
+  background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.4) 80%,rgba(0,0,0,.4) 100%);
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.4) 80%,rgba(0,0,0,.4) 100%);
+
+}
+
+#topsec a span{
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  z-index: 2;
+  /*margin-left: -23px;*/
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+
+#topsec a span::after{
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  z-index: 2;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+#top-title{
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+
+/*************************************************
+***************Top Nav Bar Stylings***************
+*************************************************/
+#topnavbarcontainer{
+  position: sticky;
+  z-index: 3;
+  top: 0;
+  background-color: #fff;
+  /* border-bottom: 4px solid #760355; */
+}
+
+/*#topnavbarcontainer::after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 20%;
+  background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.2) 60%,rgba(0,0,0,.2) 80%);
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.2) 60%,rgba(0,0,0,.2) 80%);
+}*/
+
+#topnavbar .menu-main-navigation-container .menu{
+  /*position: absolute;
+  bottom: 0;
+  right: 0;*/
+  /*position: sticky;
+  position: -webkit-sticky; /* Safari */
+  /*top: 0;
+  z-index: 3;*/
+  display: flex;
+
+}
+
+#topnavbar a{
+  color: #760355;
+  text-decoration: none;
+}
+
+#topnavbar a:hover{
+  color: #fff;
+  background-color: #760355;
+
+}
+
+#topnavbar .icon{
+  display: none;
+}
+
+/*#topsec a span{
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  color: lime;
+}*/
+
+/*#topsecnav a span:hover{
+  cursor: pointer;
+}*/
+
+ul#menu-main-navigation{
+  list-style: none;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+.navchild{
+  border-radius: 5px;
+
+}
+
+@media screen and (max-width: 600px){
+  li.childclear{
+    display: none;
+  }
+
+  li.childclear1{
+    display: none;
+  }
+
+  #topnavbar a.icon{
+    display: block;
+    margin-left: auto;
+  }
+
+  .responsive{
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+/*************************************************
+************Slanted Section 1 Homepage************
+*************************************************/
+
+.accentlinecenter{
+  width: 60px;
+  height: 2px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+
+.accentlineleft{
+  width: 120px;
+  height: 2px;
+  background-color: #fff;
+  margin-right: auto;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+
+#slantseccontainer{
+  padding: 0px;
+}
+
+#slantedsec1{
+      position: relative;
+      width: 100%;
+      height: 550px;
+      background-color: #760355;
+      /*background: #9FA2B2;*/
+      box-sizing: border-box;
+      padding: 30px;
+      color: #fff;
+      margin-bottom: 60px;
+}
+
+#slantedsec1::after{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: inherit;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform-origin: top right;
+      transform: skewY(-3deg);
+}
+
+#aboutcol2{
+  text-align: center;
+}
+
+
+/*
+#skillscol1::after{
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  min-height: 80%;
+  width: 3px;
+  content: '';
+}*/
+
+.vl{
+  border-right: 2px solid #fff;
+  position: relative;
+  z-index: 3;
+}
+
+/*************************************************
+************Slanted Section 2 Homepage************
+*************************************************/
+
+#slantedsec2{
+      position: relative;
+      width: 100%;
+      height: 550px;
+      background: #fff;
+      box-sizing: border-box;
+      padding: 30px;
+      color: #16262e;
+      /*margin-bottom: 100px;*/
+}
+
+#slantedsec2::before{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: inherit;
+      z-index: 0.5;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform-origin: bottom left;
+      transform: skewY(-3deg);
+}
+
+#skillscol1{
+  text-align: center;
+}
+
+.accentlinecenterdark{
+  width: 60px;
+  height: 2px;
+  background-color: #16262e;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+
+.accentlineleftdark{
+  width: 120px;
+  height: 2px;
+  background-color: #16262e;
+  margin-right: auto;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+
+
+/*************************************************
+***************FOOTER STYLINGS********************
+*************************************************/
+
+footer{
+  width: 100%;
+  height: auto;
+  background-color: #16262e;
+  color: #fff;
+}
+
+footer .card-body{
+  text-align: start;
+}
+
+footer .card-header{
+  /*background-color: lightgray;*/
+}
+
+footer .card{
+  color: #fff;
+  background-color: #16262e;
+}
+
+footer ul{
+  list-style: none;
+}
+
+footer a{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+footer a:hover{
+  background-color: #fff;
+  color: #760355;
+}
+
+
+
+
+
+
+/*************************************************
+******Non LandingPage Template Page Stylings******
+*************************************************/
+
+.mainarea{
+  /*background-color: #8896ab;*/
+  background-color: #fff;
+  height: 1000px;
+  /*box-sizing: border-box;*/
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(123, 109, 141, 0.3);
+  border-radius: 3px;
+}
